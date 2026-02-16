@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, i, temp;
+    int arr[20];
+
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    int mid = n / 2;
+
+    // Reverse second half
+    for(i = mid; i < (mid + n) / 2; i++)
+    {
+        temp = arr[i];
+        arr[i] = arr[n - 1 - (i - mid)];
+        arr[n - 1 - (i - mid)] = temp;
+    }
+
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
