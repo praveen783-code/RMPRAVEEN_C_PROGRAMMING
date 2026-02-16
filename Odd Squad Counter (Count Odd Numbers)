@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main() {
+
+    int n, count = 0, num;
+
+    
+
+    // Read the number of elements
+
+    scanf("%d", &n);
+
+    
+
+    // Read each number and check if it's odd
+
+    for (int i = 0; i < n; i++) {
+
+        scanf("%d", &num);
+
+        if (num % 2 != 0) {   // odd condition
+
+            count++;
+
+        }
+
+    }
+
+    
+
+    // Print the count of odd numbers
+
+    printf("%d\n", count);
+
+    
+
+    return 0;
+
+}
