@@ -1,0 +1,40 @@
+
+#include <stdio.h>
+
+int main() {
+
+    int n, count = 0, num;
+
+    
+
+    // Read the number of elements
+
+    scanf("%d", &n);
+
+    
+
+    // Read each integer and check if it's even
+
+    for (int i = 0; i < n; i++) {
+
+        scanf("%d", &num);
+
+        if (num % 2 == 0) {
+
+            count++;
+
+        }
+
+    }
+
+    
+
+    // Print the count of even numbers
+
+    printf("%d\n", count);
+
+    
+
+    return 0;
+
+}
